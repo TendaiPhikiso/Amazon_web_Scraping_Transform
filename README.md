@@ -36,6 +36,12 @@ This project involves transforming a dataset of Amazon data-related book informa
 | **4. Changing Data Types**  | Data types of columns were changed to ensure consistency and correctness.                            | - **PrintLength**: Converted to `int`.<br>- **Rating**: Converted to `float` after handling non-numeric values. |
 
 
+<p align="center">
+  Duplicate rows Img
+  
+<img  src="https://github.com/user-attachments/assets/82f2588c-2778-4390-8db9-1f3b649dbc05">
+</p>
+
 
 [Click to view cleaned data ](https://github.com/TendaiPhikiso/Amazon_web_Scraping_Transformation/blob/main/cleaned-data.csv)
 
