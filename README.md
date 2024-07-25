@@ -26,14 +26,16 @@ This project involves transforming a dataset of Amazon data-related book informa
 
 [Click to view code ](https://github.com/TendaiPhikiso/Amazon_web_Scraping_Transformation/blob/main/Amazon%20web%20scraping%20-%20Transformation%20Phase.ipynb)
 
- ### Data Transformation Steps
 
-| Step                   | Description                                                                                             | Example                                                          |
-|------------------------|---------------------------------------------------------------------------------------------------------|------------------------------------------------------------------|
-| **1. Renaming Headers**| The headers of the dataset have been renamed to be more descriptive and consistent. This helps in making the data more understandable and easier to work with. | - **Name** column was changed to **AuthorName**. |
+## Data Transformation Steps
+
+| Step                       | Description                                                                                             | Example                                                          |
+|----------------------------|---------------------------------------------------------------------------------------------------------|------------------------------------------------------------------|
+| **1. Renaming Headers**    | The headers of the dataset have been renamed to be more descriptive and consistent. This helps in making the data more understandable and easier to work with. | - **Name** column was changed to **AuthorName**. |
 | **2. Cleaning Attribute Values** | Certain columns contained values that needed cleaning to make the data consistent. | - **ReviewCount**: Removed the word "ratings" and commas from numeric values. |
 | **3. Replacing NaN Values** | NaN values in the dataset were replaced with appropriate default values.                              | - **AuthorName**: Replaced NaN with "Unknown".<br>- **SellingPrice**: Replaced NaN with 0. |
-| **4. Changing Data Types**  | Data types of columns were changed to ensure consistency and correctness.                            | - **PrintLength**: Converted to `int`.<br>- **Rating**: Converted to `float` after handling non-numeric values. |
+| **4. Changing Data Types** | Data types of columns were changed to ensure consistency and correctness.                            | - **PrintLength**: Converted to `int`.<br>- **Rating**: Converted to `float` after handling non-numeric values. |
+| **5. Removing Duplicate Rows** | Duplicate rows in the dataset were identified and removed to ensure data integrity.              | - Total number of duplicate rows found: **130**. |
 
 
 <p align="center">
