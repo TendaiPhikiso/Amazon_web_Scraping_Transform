@@ -11,9 +11,10 @@ Below are images showing the dataset before and after the data cleaning process.
 
 <table>
   <tr>
-    <td><img src="https://github.com/user-attachments/assets/1eacab1c-4a6b-4eaa-b768-d1f6197effcb" alt="Before Data Cleaning" height="300" width="auto" style="display: block;"/> <p style="text-align: center;">Before Data Cleaning</p> </td>
+    <td><img src="https://github.com/user-attachments/assets/1eacab1c-4a6b-4eaa-b768-d1f6197effcb" alt="Before Data Cleaning" height="300" width="auto" style="display: block;"/> 
+     <p align="center">Before Data Cleaning</p> </td>
     <td><img src="https://github.com/user-attachments/assets/b2993dff-4c0b-423f-b2c7-4c9efd1190bb" alt="After Data Cleaning" height="300" width="auto" style="display: block;"/>
-     <p style="text-align: center;">After Data Cleaning</p>
+    <p align="center">After Data Cleaning</p>
     </td>
   </tr>
 </table>
