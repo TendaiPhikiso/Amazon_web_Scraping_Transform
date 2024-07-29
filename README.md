@@ -5,6 +5,32 @@
 <img  src="https://github.com/user-attachments/assets/1f021b3e-c98e-4cca-b440-08e693ac6ead">
 </p>
 
+### Data Quality Observations
+
+Before performing data transformation, it’s important to assess the quality of the data to understand what needs to be cleaned. The following observations were made on the 
+[amazon_dataBooks.csv](https://github.com/TendaiPhikiso/Amazon_web_Scraping/blob/main/amazon_dataBooks.csv) table:
+<details>
+<summary>
+Click to view Observations
+</summary>
+  
+| **Column**               | **Observation**                                                                                                                                                                                                                             |
+|--------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Column Headers           | Most header names are not descriptive, for instance, "title" and "name," which can make it difficult to understand what the column entails.                                                                                                 |
+| title                    | No issue identified within the column other than renaming the header.                                                                                                                                                                       |
+| name                     | Contains 10 null values and trailing text “\n(Author)” which needs to be removed as we only want the name of the author.                                                                                                                    |
+| sellingPrice             | Contains 71 null values and the £ symbol, which needs to be removed if numerical analysis is to take place in the analysis phase.                                                                                                           |
+| listingPrice             | Contains 183 null values, which we can assume means other books are not discounted. It has leading text “RRP: £” and “was: £” which need to be removed as the column will be used for numeric analysis.                                      |
+| typeOfBook               | Contains 9 null values, and includes a hyphen and date which should be removed to keep only the book type (e.g., Paperback, Hardcover). There’s already a data attribute.                                                                   |
+| printLength              | Contains text values "Print length," and " pages" which need to be removed to retain only the numerical values. It has 77 null values.                                                                                                      |
+| publicationDate          | Contains text "Publication date: " which needs to be removed to retain only the date values. Contains 10 null values.                                                                                                                       |
+| rating                   | Contains text "out of 5 stars,” which is unnecessary as we know that the ratings will be out of 5. Other rows contain text such as “Previous slide of product details” instead of the review number itself, which can cause issues when converting the column into a numeric datatype. |
+| reviews                  | Contains text “ratings” as well as a comma with other numeric values that are 4 digits long.                                                                                                                                                |
+| availability             | Contains 1 null value.                                                                                                                                                                                                                      |
+
+</details>
+
+### 
 <p align="center">
 Below are images showing the dataset before and after the data cleaning process.
 </p>
