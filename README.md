@@ -26,7 +26,7 @@ Click to view Observations
 | publicationDate          | Contains text "Publication date: " which needs to be removed to retain only the date values. Contains 10 null values.                                                                                                                       |
 | rating                   | Contains text "out of 5 stars,” which is unnecessary as we know that the ratings will be out of 5. Other rows contain text such as “Previous slide of product details” instead of the review number itself, which can cause issues when converting the column into a numeric datatype. |
 | reviews                  | Contains text “ratings” as well as a comma with other numeric values that are 4 digits long.                                                                                                                                                |
-| availability             | Contains 1 null value.                                                                                                                                                                                                                      |
+| availability             | Contains 1 null value. Some entries have text value such as "Usually dispatched within 2 to 3 days"  or "Only 3 left in stock (more on the way)."                                                                                                                                                                                                                   |
 
 </details>
 
