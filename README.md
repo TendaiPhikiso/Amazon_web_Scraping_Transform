@@ -80,7 +80,7 @@ This project involves transforming a dataset of Amazon data-related book informa
   Photo by sarasanalytics.com
 </p>
 
-1. **Loading Data**: The next step involves loading the cleaned data into a Microsoft SQL Server database. This will enable efficient querying and analysis of the data.
+1. **Loading Data**: The next step involves loading the cleaned data into a Microsoft SQL Server database. This will enable efficient querying and analysis of the data. [Click here to view Load Phase](https://github.com/TendaiPhikiso/Amazon_web_scraping_Load_AnalysisPhase)
 
 2. **View Extract Phase**: If you are interested in viewing the details of the Extract phase of the project, you can find it [here](https://github.com/TendaiPhikiso/Amazon_web_Scraping).
 
