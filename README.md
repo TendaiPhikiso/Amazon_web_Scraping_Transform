@@ -19,6 +19,7 @@ Click to view Observations
 |--------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Column Headers**        | Most header names are not descriptive, for instance, "title" and "name," which can make it difficult to understand what the column entails.                                                                              |
 | **title**                 | No issue identified within the column other than renaming the header.                                                                                                                                                   |
+| **Filtering Non-Data-Related Books** | During the scraping process, some books that were not data-related were also collected. These non-data-related books need to be filtered out to maintain the focus on data-related content.                      |
 | **name**                  | Contains 10 null values and trailing text “\n(Author)” which needs to be removed as we only want the name of the author.                                                                                                 |
 | **sellingPrice**          | Contains 71 null values and the £ symbol, which needs to be removed if numerical analysis is to take place in the analysis phase.                                                                                        |
 | **listingPrice**          | Contains 183 null values, which we can assume means other books are not discounted. It has leading text “RRP: £” and “was: £” which need to be removed as the column will be used for numeric analysis.                  |
@@ -28,7 +29,7 @@ Click to view Observations
 | **rating**                | Contains text "out of 5 stars,” which is unnecessary as we know that the ratings will be out of 5. Other rows contain text such as “Previous slide of product details” instead of the review number itself.              |
 | **reviews**               | Contains text “ratings” as well as a comma with other numeric values that are 4 digits long.                                                                                                                            |
 | **availability**          | Contains 1 null value. Some entries have text value such as "Usually dispatched within 2 to 3 days" or "Only 3 left in stock (more on the way)."                                                                         |
-| **Filtering Non-Data-Related Books** | During the scraping process, some books that were not data-related were also collected. These non-data-related books need to be filtered out to maintain the focus on data-related content.                      |
+
 
 
 </details>
